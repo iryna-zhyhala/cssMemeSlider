@@ -1,9 +1,6 @@
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    width: 100%;
-    max-width: 100%;
 }
 
 *{
@@ -13,21 +10,30 @@ html{
     border: 0;
 }
 
+body{
+    background-color: rgb(207, 201, 172);
+}
+
 .slider__container{
     margin: auto;
     max-width: 64rem;
     width: 100%;
-    background-color: rgb(73, 70, 70);
+    background-color: rgb(167, 149, 102);
+    border-radius: 4%;
+    margin-top: 6%;
 }
 
 .slider__img{
     max-width: 64rem;
     max-height: 36rem;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
 }
 
 .points{
     display: flex;
-    margin: 0.625rem;
+    padding-left: 80%;
+    margin-top: -2.5rem;
 }
 
 .point__container{
@@ -41,19 +47,19 @@ html{
     width: 1.5rem;
     border-radius: 50%;
     background-color: white;
-    margin: 0 0.125rem;
+    margin: 0 0.125rem 0.5rem;
     display: inline-block;
     transition: background-color 1s ease;
 }
 
 .text{
-    margin: 0.625rem;
+    margin: 0.85rem 1.5rem;
     color: white;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .active, .point:hover{
-    background-color: rgb(80, 131, 199);
+    background-color: rgb(95, 126, 167);
 }
 
 .fade{
@@ -71,3 +77,49 @@ html{
     from{opacity: .4}
     to{opacity: 1;}
  }
+
+ /* media 375px - 767px styles start */
+@media (max-width: 767px) {
+
+    .slider__container{
+        min-height: 34rem;
+    }
+
+    .points{
+        padding-left: 37%;
+        margin-top: -5rem;
+    }
+
+    .text{
+        margin: 3.85rem 1.5rem 0.5rem;
+    }
+
+}
+
+@media (max-width: 690px) {
+
+    .slider__container{
+        min-height: 31rem;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .slider__container{
+        min-height: 25.5rem;
+    }
+
+}
+
+@media (max-width: 470px) {
+
+    .slider__container{
+        min-height: 23rem;
+    }
+
+    .points{
+        padding-left: 30%;
+    }
+
+}
