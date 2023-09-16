@@ -20,11 +20,9 @@ html{
     background-color: rgb(73, 70, 70);
 }
 
-
-.container__buttom{
-    margin-top: 1.25rem;
-    display: flex;
-    justify-content: space-between;
+.slider__img{
+    max-width: 64rem;
+    max-height: 36rem;
 }
 
 .points{
@@ -45,11 +43,7 @@ html{
     background-color: white;
     margin: 0 0.125rem;
     display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.slider__text{
-
+    transition: background-color 1s ease;
 }
 
 .text{
@@ -64,9 +58,9 @@ html{
 
 .fade{
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 2.5s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
 }
 
 @-webkit-keyframes fade{
@@ -77,6 +71,3 @@ html{
     from{opacity: .4}
     to{opacity: 1;}
  }
-
-
-

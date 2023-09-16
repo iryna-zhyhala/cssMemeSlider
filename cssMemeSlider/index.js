@@ -16,7 +16,7 @@ function plusSlides(n) {
 
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("slider__img");
+    let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("dot");
 
     if(n > slides.length) {
