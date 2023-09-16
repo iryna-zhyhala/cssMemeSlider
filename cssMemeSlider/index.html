@@ -7,36 +7,35 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="slider__container">
-            <div class="slider__track">
-                <img src="./img/cat1.jpg" alt="cat" class="slider__img fade" width="800px" height="500px">
-                <img src="./img/cat5.jpg" alt="cat" class="slider__img fade" width="800px" height="500px">
-                <img src="./img/cat6.jpg" alt="cat" class="slider__img fade" width="800px" height="500px">
-                <img src="./img/cat7.jpg" alt="cat" class="slider__img fade" width="800px" height="500px">
+    <div class="slider__container">
+        <div class="mySlides fade">
+            <img src="./img/cat1.jpg" alt="cat" class="slider__img" width="100%">
+            <p class="text">Хозяин сказал "Мяу", он знает мой язык?</p>
+        </div>
+        <div class="mySlides fade">
+            <img src="./img/cat5.jpg" alt="cat" class="slider__img" width="100%">
+            <p class="text">Удивительно!</p>
+        </div>
+        <div class="mySlides fade">
+            <img src="./img/cat6.jpg" alt="cat" class="slider__img" width="100%">
+            <p class="text">Неописуемо!</p>
+        </div>
+        <div class="mySlides fade">
+            <img src="./img/cat7.jpg" alt="cat" class="slider__img" width="100%">
+            <p class="text">Потрясающе!</p>
+        </div>
+        <div class="points">
+            <div class="point__container">
+                <div class="point" onclick="currentSlide(1)"></div>
             </div>
-            <div class="container__buttom">
-                <div class="slider__text">
-                    <p class="text"></p>
-                    <p class="text"></p>
-                    <p class="text"></p>
-                    <p class="text"></p>
-                </div>
-                <div class="points">
-                    <div class="point__container">
-                        <div class="point"></div>
-                    </div>
-                    <div class="point__container">
-                        <div class="point"></div>
-                    </div>
-                    <div class="point__container">
-                        <div class="point"></div>
-                    </div>
-                    <div class="point__container">
-                        <div class="point"></div>
-                    </div>
-                </div>
-                
+            <div class="point__container">
+                <div class="point" onclick="currentSlide(2)"></div>
+            </div>
+            <div class="point__container">
+                <div class="point"  onclick="currentSlide(3)"></div>
+            </div>
+            <div class="point__container">
+                <div class="point" onclick="currentSlide(4)"></div>
             </div>
         </div>
     </div>

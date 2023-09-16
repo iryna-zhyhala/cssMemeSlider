@@ -1,16 +1,25 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 .slider__container{
     margin: auto;
     max-width: 64rem;
+    width: 100%;
     background-color: rgb(73, 70, 70);
 }
 
-.slider__track{
-    margin: auto;
-}
-
-.slider__img{
-
-}
 
 .container__buttom{
     margin-top: 1.25rem;
