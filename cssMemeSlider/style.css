@@ -49,7 +49,7 @@ body{
     background-color: white;
     margin: 0 0.125rem 0.5rem;
     display: inline-block;
-    transition: background-color 1s ease;
+    transition: background-color 0.5s ease;
 }
 
 .text{
@@ -58,15 +58,26 @@ body{
     font-size: 1.5rem;
 }
 
-.active, .point:hover{
-    background-color: rgb(95, 126, 167);
+.active{
+    background-color: rgb(61, 192, 28);
+    color: blue;
+}
+
+.point:hover{
+    background-color: rgb(56, 40, 10);
+}
+
+.point:active{
+    border-color: rgb(134, 41, 25);
+    background-color: rgb(177, 114, 72);
+    transition-duration: 0.1s;
 }
 
 .fade{
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2.5s;
+    -webkit-animation-duration: 1.5s;
     animation-name: fade;
-    animation-duration: 2.5s;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade{
