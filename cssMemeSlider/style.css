@@ -1,0 +1,73 @@
+.slider__container{
+    margin: auto;
+    max-width: 64rem;
+    background-color: rgb(73, 70, 70);
+}
+
+.slider__track{
+    margin: auto;
+}
+
+.slider__img{
+
+}
+
+.container__buttom{
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.points{
+    display: flex;
+    margin: 0.625rem;
+}
+
+.point__container{
+    cursor: pointer;
+    margin: 0.25rem;
+}
+
+.point{
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 0.125rem;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.slider__text{
+
+}
+
+.text{
+    margin: 0.625rem;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.active, .point:hover{
+    background-color: rgb(80, 131, 199);
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1;}
+}
+ @keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1;}
+ }
+
+
+
