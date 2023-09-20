@@ -151,6 +151,10 @@ p{
  /* media 375px - 767px styles start */
 @media (max-width: 870px) {
 
+    .slider__wrapper{
+        height: 65%;
+    }
+
     .img__wrapper{
         margin-top: 0rem;
     }
@@ -167,10 +171,14 @@ p{
 
     .text{
         order: 1;
-        margin-top: 2rem;
+        margin-top: 4rem;
+        margin-left: 10rem;
     }
+}
 
-    p {
-        text-align: center;
+@media (max-width: 530px) {
+
+    .text{
+        margin-left: 15rem;
     }
 }
