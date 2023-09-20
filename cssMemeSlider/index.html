@@ -8,37 +8,46 @@
 </head>
 <body>
     <div class="slider__container">
-        <div class="slide fade">
-            <img src="./img/cat1.jpg" alt="cat" class="slider__img" width="100%">
-            <p class="text">Хозяин сказал "Мяу"</p>
-        </div>
-        <div class="slide fade">
-            <img src="./img/cat2.jpg" alt="cat" class="slider__img" width="100%">
-            <p class="text">Удивительно!</p>
-        </div>
-        <div class="slide fade">
-            <img src="./img/cat3.jpg" alt="cat" class="slider__img" width="100%">
-            <p class="text">Неописуемо!</p>
-        </div>
-        <div class="slide fade">
-            <img src="./img/cat4.jpg" alt="cat" class="slider__img" width="100%">
-            <p class="text">Потрясающе!</p>
-        </div>
-        <div class="points">
-            <div class="point__container">
-                <div class="point" onclick="currentSlide(1)"></div>
+        <div class="slider">
+            <input type="radio" id="radio__point1" name="mem" checked>
+            <input type="radio" id="radio__point2" name="mem">
+            <input type="radio" id="radio__point3" name="mem">
+            <input type="radio" id="radio__point4" name="mem">
+            <div class="slider__wrapper">
+                <div class="img__wrapper">
+                    <img src="./img/cat1.jpg" alt="cat">
+                </div>
+                <div class="img__wrapper">
+                    <img src="./img/cat2.jpg" alt="cat"></div>
+                <div class="img__wrapper"><img src="./img/cat3.jpg" alt="cat">
+                </div>
+                <div class="img__wrapper">
+                    <img src="./img/cat4.jpg" alt="cat">
+                </div>
             </div>
-            <div class="point__container">
-                <div class="point" onclick="currentSlide(2)"></div>
-            </div>
-            <div class="point__container">
-                <div class="point"  onclick="currentSlide(3)"></div>
-            </div>
-            <div class="point__container">
-                <div class="point" onclick="currentSlide(4)"></div>
+            <div class="bottom__content">
+                <div class="text">
+                    <p>Хозяин сказал "Мяу"</p>
+                    <p>Удивительно!</p>
+                    <p>Неописуемо!</p>
+                    <p>Потрясающе!</p>
+                </div>
+                <div class="points">
+                    <label for="radio__point1">
+                        <div class="point point1"></div>
+                    </label>
+                    <label for="radio__point2">
+                        <div class="point point2"></div>
+                    </label>
+                    <label for="radio__point3">
+                        <div class="point point3"></div>
+                    </label>
+                    <label for="radio__point4">
+                        <div class="point point4"></div>
+                    </label>
+                </div>
             </div>
         </div>
     </div>
-    <script src="../cssMemeSlider/index.js"></script>
 </body>
 </html>
